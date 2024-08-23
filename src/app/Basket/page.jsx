@@ -50,7 +50,7 @@ export default function Basketcart() {
 
   const [empty, setEmpty] = useState('')
   useEffect(() => {
-    if (persiancart == '') {
+    if (persiancart.length === 0) {
       setEmpty('سبد خرید شما خالی است')
     }
     else {
