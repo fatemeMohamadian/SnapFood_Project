@@ -84,12 +84,7 @@ export default function Basketcart() {
             </span>
             <p className='w-full pr-[10px] font-title2'>{persiancart.length} محصول</p>
           </div>
-          {persiancart.length === 0 ? (
-              <div className='w-full flex justify-center items-center'>
-              <h2 className='font-title3'>سبد خرید شما خالی است.</h2>
-            </div>
-          ) : ( 
-      {persiancart?.map((val) => {
+          {persiancart?.map((val) => {
             return (
               <div key={val.id} className='w-full rounded-lg shadow-lg *:my-[10px] flex flex-wrap justify-evenly items-center border-[1px] border-[#ff97dbb5]'>
                 <div className='w-[95%] flex justify-end items-start'>
@@ -129,47 +124,6 @@ export default function Basketcart() {
               </div>
             )
           })}
-         )}
-{/*           {persiancart?.map((val) => {
-            return (
-              <div key={val.id} className='w-full rounded-lg shadow-lg *:my-[10px] flex flex-wrap justify-evenly items-center border-[1px] border-[#ff97dbb5]'>
-                <div className='w-[95%] flex justify-end items-start'>
-                  <span onClick={() => del(val.id)} className='flex text-[#e42b2b] cursor-pointer justify-end items-center'>
-                    <DeleteRoundedIcon />
-                  </span>
-                </div>
-                <figure className='w-[150px] h-[150px] bg-[#ff00a6b2] rounded-lg flex justify-center items-center'>
-                  <img className='object-cover w-[110px] h-[110px] rounded-xl' src={val.pic} alt='cart1' />
-                </figure>
-                <div className='lg:w-[50%] w-full flex-wrap flex justify-center text-center lg:text-start lg:justify-start items-center *:w-full'>
-                  <h3 className='font-title3 text-xl'>{val.title}</h3>
-                  <p className='font-bnazanin mt-[10px] text-gray-600'>{val.featurs}</p>
-                  <p className='font-bnazanin text-gray-600'>پیک فروشنده</p>
-                  <p className='font-bnazanin text-gray-600'><UpdateIcon className='text-sm' /> دریافت در سریع ترین زمان ممکن</p>
-                  <p className='font-bnazanin text-gray-600'>ارسال سریع</p>
-                </div>
-                <div className='w-full *:my-[20px] justify-start items-center flex'>
-                  <span className='flex-wrap w-[50%] lg:w-[17%] flex justify-evenly items-start'>
-                    {/* icon + */}
-                    <span onClick={() => pluscart(val.id)} className='flex  cursor-pointer justify-center items-center border shadow-md bg-white rounded-[50%] text-[#ff00a6]'>
-                      <AddIcon />
-                    </span>
-
-                    <p className='font-title2'>{val.count}</p>
-                    {/* icon - */}
-                    <span onClick={() => minezcart(val.id)} className='flex cursor-pointer justify-center items-center border shadow-md bg-white rounded-[50%] text-[#ff00a6]'>
-                      <RemoveIcon />
-                    </span>
-
-                  </span>
-                  <div className='w-[40%] flex justify-center items-center'>
-                    <span className='font-title2'>{val.price}</span>
-                    <span className='font-bnazanin pr-[5px]'>{val.val}</span>
-                  </div>
-                </div>
-              </div>
-            )
-          })} */}
           <div className='w-[90%] *:my-[15px] flex flex-wrap justify-evenly items-center'>
             <div className='w-full flex justify-center items-center'>
               <h2 className='font-title3'>{empty}</h2>
