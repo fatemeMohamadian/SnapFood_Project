@@ -11,8 +11,6 @@ import DeleteRoundedIcon from '@mui/icons-material/DeleteRounded';
 import { styled } from '@mui/material/styles';
 import Button from '@mui/material/Button';
 export default function Basketcart() {
-  const [localCart, setLocalCart] = useState([]);
-
   const ColorButton = styled(Button)(({ theme }) => ({
     color: theme.palette.getContrastText('#ff00a6'),
     backgroundColor: '#ff00a6',
@@ -47,16 +45,6 @@ export default function Basketcart() {
       alert('سفارشی موجود نیست!\nسفارش جدید خود را ثبت کنید!')
     }
   }
-
-  const [empty, setEmpty] = useState('')
-  useEffect(() => {
-    if (persiancart.length === 0) {
-      setEmpty('سبد خرید شما خالی است')
-    }
-    else {
-      setEmpty('')
-    }
-  }, [empty])
   return (
     <section dir='rtl' className='w-full flex justify-center items-center flex-wrap'>
       <div className='w-[90%] flex justify-between items-start flex-wrap'>
@@ -135,11 +123,6 @@ export default function Basketcart() {
             </>
           )
           }
-          <div className='w-[90%] *:my-[15px] flex flex-wrap justify-evenly items-center'>
-            <div className='w-full flex justify-center items-center'>
-              <h2 className='font-title3'>{empty}</h2>
-            </div>
-          </div>
         </div>
         <div className='lg:w-[25%] w-full shadow-md rounded-lg flex-wrap flex justify-center items-center border'>
           <div className='w-[90%] *:my-[10px] flex justify-center items-center flex-wrap'>
