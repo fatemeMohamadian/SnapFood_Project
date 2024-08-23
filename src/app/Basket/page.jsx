@@ -26,47 +26,7 @@ export default function Basketcart() {
   const del = useCart((state) => state.del)
   const alldelete = useCart((state) => state.alldelete)
   
-
-  // useEffect(() => {
-  //   // اینجا میای چک میکنی که اگر دیتا نبود یه ارایه خالی بدی که ارور نده
-  //   let last = JSON.parse(localStorage.getItem('myfood')) ?? []
-     
-  //   // ازین مشکل که گذشتی میرسی به اینجا و دوبار تکرار یا ممکنه هر بار که persiancart تغییر کنه اینجا دیتات تکرار شه و میای از some استفاده میکنی
-
-  //   persiancart.forEach((val) => {
-  //     // انیجی چک میکنی ببینی تکراری نباشه
-  //     const exists = last.some((item) => item.id === val.id)
-  //     if (!exists) {
-  //       last.push(val)
-  //     }
-  //   })
-
-
-  //   localStorage.setItem('myfood', JSON.stringify(last))
-
-  //   setLocalCart(last)
-  // }, [persiancart])
-
-
-
-
   
-   
-  // useEffect(() => {
-  //   // Load cart from localStorage on component mount
-  //   const savedCart = localStorage.getItem('persianCart');
-  //   if (savedCart) {
-  //     setLocalCart([...localCart,JSON.parse(savedCart)]);
-  //   }
-  // }, []);
-
-  // useEffect(() => {
-  //   // Save cart to localStorage whenever it changes
-  //   localStorage.setItem('persianCart', JSON.stringify(persiancart));
-  //   setLocalCart(persiancart);
-  // }, [persiancart]);
-
-
   const sumtotal = persiancart.reduce((prevalue, nextvalue) => {
     return prevalue + (nextvalue.price) * (nextvalue.count)
   }, 0)
@@ -119,7 +79,7 @@ export default function Basketcart() {
               </Link>
               <h2 className='font-title2'>سبد خرید شما</h2>
             </span>
-            <span onClick={alldelete} className='w-[50%] *:my-[5px] border font-bnazanin font-bold text-xl flex justify-center lg:justify-end items-center'>
+            <span onClick={alldelete} className='w-[50%] *:my-[5px] font-bnazanin font-bold text-xl flex justify-center lg:justify-end items-center'>
               <ColorButton className='lg:w-[50%] w-full' sx={{ padding: '6px' }} variant="contained"><p className='font-title1 text-xl font-bold'>حذف خرید</p></ColorButton>
             </span>
             <p className='w-full pr-[10px] font-title2'>{persiancart.length} محصول</p>
@@ -144,13 +104,13 @@ export default function Basketcart() {
                 </div>
                 <div className='w-full *:my-[20px] justify-start items-center flex'>
                   <span className='flex-wrap w-[50%] lg:w-[17%] flex justify-evenly items-start'>
-                    {/* icon - */}
+                    {/* icon + */}
                     <span onClick={() => pluscart(val.id)} className='flex  cursor-pointer justify-center items-center border shadow-md bg-white rounded-[50%] text-[#ff00a6]'>
                       <AddIcon />
                     </span>
 
                     <p className='font-title2'>{val.count}</p>
-                    {/* icon + */}
+                    {/* icon - */}
                     <span onClick={() => minezcart(val.id)} className='flex cursor-pointer justify-center items-center border shadow-md bg-white rounded-[50%] text-[#ff00a6]'>
                       <RemoveIcon />
                     </span>
