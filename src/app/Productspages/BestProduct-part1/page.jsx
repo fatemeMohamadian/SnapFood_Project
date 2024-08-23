@@ -90,7 +90,7 @@ export default function Bestpro() {
                                         <div className='w-full flex justify-center items-center'>
                                         <img className='w-full rounded-lg h-full object-cover' src={val.pic} alt="pic1" />
                                         </div>
-                                        <div className='w-[80px] md:hidden absolute flex justify-center items-center bg-white top-[53%] shadow-lg translate-x-[-50%] translate-y-[-50%]  left-[50%] h-[80px] rounded-lg'>
+                                        <div className='w-[80px] md:hidden absolute flex justify-center items-center bg-white top-[55%] shadow-lg translate-x-[-50%] translate-y-[-50%]  left-[50%] h-[80px] rounded-lg'>
                                         <img className='w-[70px] h-[70px] rounded-lg object-cover'  src={val.logo} alt="logo1" />
                                         </div>
                                         <h2 className='font-title2 mt-[30px] text-center flex justify-center items-center'>{val.title}</h2>
