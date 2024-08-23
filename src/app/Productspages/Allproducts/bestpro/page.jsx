@@ -44,7 +44,7 @@ export default function Bestallpro() {
                                 <div className='w-full flex justify-center items-center'>
                                     <img className='w-full h-full rounded-lg  object-cover' src={item.pic} alt="pic1" />
                                 </div>
-                                <div className='w-[80px]  absolute flex justify-center items-center lg:top-[41%] bg-white top-[49%] shadow-lg translate-x-[-50%] translate-y-[-50%]  left-[50%] h-[80px] rounded-lg'>
+                                <div className='w-[80px]  absolute flex justify-center items-center lg:top-[41%] bg-white top-[50%] shadow-lg translate-x-[-50%] translate-y-[-50%]  left-[50%] h-[80px] rounded-lg'>
                                     <img className='w-[70px] h-[70px] rounded-lg object-cover' src={item.logo} alt="logo1" />
                                 </div>
                                 <h2 className='font-title2 mt-[30px] text-center flex justify-center items-center'>{item.title}</h2>
