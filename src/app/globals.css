@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'title';
+  src: url('./../assets/font/BTitrBd.ttf');
+}
+
+@font-face {
+  font-family: 'bnazanin';
+  src: url('./../assets/font/BNazanin.ttf');
+}
+
+@font-face {
+  font-family: 'title1';
+  src: url('./../assets/font/Merriweather-BoldItalic.ttf');
+}
+
+@font-face {
+  font-family: 'title2';
+  src: url('./../assets/font/IRANSansMobile\(FaNum\)_Medium.ttf');
+}
+
+@font-face {
+  font-family: 'title3';
+  src: url('./../assets/font/Iran\ Sans\ Bold.ttf');
+}
+
+.swiper-button-next {
+  color: rgb(255, 0, 166) !important;
+  background-color: rgb(251, 251, 251);
+  width: 45px !important;
+  height: 45px !important;
+  border-radius: 50%;
+  box-shadow: 0 0 50px 30px rgb(255, 255, 255) !important;
+  border: 1px solid rgba(212, 212, 212, 0.803);
+  top: 70px !important;
+}
+
+.swiper-button-prev {
+  color: rgb(255, 0, 166) !important;
+  background-color: rgb(251, 251, 251);
+  width: 45px !important;
+  height: 45px !important;
+  border-radius: 50%;
+  box-shadow: 0 0 50px 30px rgb(255, 255, 255) !important;
+  border: 1px solid rgba(212, 212, 212, 0.803);
+  top: 70px !important;
+}
+
+:root {
+  --swiper-navigation-size: 25px !important;
+}
+.swiper-pagination-bullet-active{
+  background-color: rgb(255, 0, 166) !important;
+}
+
+@keyframes box1 {
+  5% {
+    margin-top: 5px;
+  }
+
+  20% {
+    margin-top: 5px;
+  }
+
+  35% {
+    margin-top: -45px;
+  }
+
+  50% {
+    margin-top: -45px;
+  }
+
+  65% {
+    margin-top: -90px;
+  }
+
+  100% {
+    margin-top: -90px;
+  }
+}
+
+@keyframes box2 {
+  5% {
+    margin-top: 5px;
+  }
+
+  45% {
+    margin-top: 5px;
+  }
+
+  70% {
+    margin-top: -50px;
+  }
+
+  100% {
+    margin-top: -50px;
+  }
+}
+
+/* .dkdk{
+  background-color: rgba(122, 122, 122, 0.8);
+} */
