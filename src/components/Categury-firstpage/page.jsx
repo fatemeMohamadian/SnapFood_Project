@@ -15,7 +15,7 @@ export default function Catesec() {
                 <Login />
             </section>
             <div className='w-[90%] my-[30px] flex justify-center text-center lg:text-start lg:justify-start items-center'>
-                <h2 className='font-title2 font-semibold text-lg text-slate-700'>دسته بندی ها</h2>
+                <h2 className='font-title2 font-semibold text-lg text-slate-700'>دسته بندی ها (روی تصاویر زیر کلیک نمایید)</h2>
             </div>
             <div className='w-[90%] mt-[10px] flex flex-wrap justify-center items-center'>
                 <Grid className='*:my-[10px]  *:rounded-sm' container sx={{ display: 'flex', justifyContent: 'space-evenly', alignItems: 'center' }}>
